@@ -1,0 +1,35 @@
+<h3>
+  {{ titleCounter }}
+</h3>
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+      <button class="btn btn-primary" 
+          type="button" 
+          id="button-addon1"
+          (click) = "changeProgress( -5 )"
+          >
+          <i class="mdi mdi-minus"></i>
+      </button>
+  </div>
+  <input type="number"
+      #txtProgress
+      class="form-control" 
+      placeholder="" 
+      aria-label="Example text with button addon" aria-describedby="button-addon1"
+      name="progress"
+      [(ngModel)] = " progress "
+      (ngModelChange) = " onChanges( $event ) "
+      min="1"
+      max="100"
+      >
+  <div class="input-group-prepend">
+      <button class="btn btn-primary" 
+          type="button" 
+          id="button-addon1"
+          (click) = " changeProgress( +5 ) "
+          > 
+          <i class="mdi mdi-plus" ></i>
+      </button>
+  </div>
+</div>
