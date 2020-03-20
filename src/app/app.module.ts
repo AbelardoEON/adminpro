@@ -9,7 +9,6 @@ import { LoginComponent } from './login/login.component';
 
 // Modules
 import { PagesModule } from './pages/pages.module';
-import { IncrementorComponent } from './incrementor/incrementor.component';
 
 // Temporal
 import { FormsModule } from '@angular/forms';
