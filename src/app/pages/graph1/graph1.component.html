@@ -1,23 +1,73 @@
-
+<!-- firts line  -->
 <div class="row">
-  <div class="col-12">
+  <!-- graph1  -->
+  <div class="col-6">
     <div class="card">
       <div class="card-body">
-
-        <div>
-          <div>
-            <div style="display: block">
-              <canvas baseChart
-                [data]="doughnutChartData"
-                [labels]="doughnutChartLabels"
-                [chartType]="doughnutChartType">
-              </canvas>
-            </div>
-          </div>
-        </div>
-
-
+        <h4 class="card-title">
+          {{ graficos.grafico1.leyenda }}   
+        </h4>
+        <app-donut-graph
+          [doughnutChartLabels]="graficos.grafico1.labels"
+          [doughnutChartData]=" graficos.grafico1.data "
+        ></app-donut-graph>
       </div>
     </div>
   </div>
+<!-- end graph 1  -->
+
+<!-- start graph 2 -->
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">
+          {{ graficos.grafico2.leyenda }}   
+        </h4>
+        <app-donut-graph
+          [doughnutChartLabels]="graficos.grafico2.labels"
+          [doughnutChartData]=" graficos.grafico2.data "
+        ></app-donut-graph>
+      </div>
+    </div>
+  </div>
+<!-- end graph 2 -->
 </div>
+<!-- end first line  -->
+
+<!-- start second line  -->
+<div class="row">
+
+  <!-- start graph 3  -->
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">
+          {{ graficos.grafico3.leyenda }}   
+        </h4>
+        <app-donut-graph
+          [doughnutChartLabels]="graficos.grafico3.labels"
+          [doughnutChartData]=" graficos.grafico3.data "
+        ></app-donut-graph>
+      </div>
+    </div>
+  </div>
+  <!-- end grpah 3  -->
+
+  <!-- start graph 4 -->
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">
+          {{ graficos.grafico4.leyenda }}   
+        </h4>
+        <app-donut-graph
+          [doughnutChartLabels]="graficos.grafico4.labels"
+          [doughnutChartData]=" graficos.grafico4.data "
+        ></app-donut-graph>
+      </div>
+    </div>
+  </div>
+  <!-- end graph 4 -->
+
+</div>
+<!-- end second line  -->

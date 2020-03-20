@@ -13,6 +13,7 @@ import { IncrementorComponent } from '../components/incrementor/incrementor.comp
 
 // ng 2charts 
 import { ChartsModule } from 'ng2-charts';
+import { DonutGraphComponent } from '../components/donut-graph/donut-graph.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ChartsModule } from 'ng2-charts';
     DashboardComponent,
     ProgressComponent,
     Graph1Component,
-    IncrementorComponent
+    IncrementorComponent,
+    DonutGraphComponent
   ],
   exports: [
     DashboardComponent,
