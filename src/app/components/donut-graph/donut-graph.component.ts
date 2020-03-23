@@ -10,7 +10,7 @@ import { MultiDataSet, Label } from 'ng2-charts';
 export class DonutGraphComponent implements OnInit {
   @Input() public doughnutChartLabels: Label[] = [];
   @Input() public doughnutChartData: MultiDataSet = [];
-  @Input() public doughnutChartType: ChartType = 'doughnut';
+  doughnutChartType: ChartType = 'doughnut';
   constructor() { }
 
   ngOnInit() {
