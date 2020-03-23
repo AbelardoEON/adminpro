@@ -1,3 +1,4 @@
+import { SettingsService } from './../services/settings.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PagesComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public settingsService: SettingsService
+  ) {
+    this.settingsService.getSettings();
+  }
 
   ngOnInit() {
   }

@@ -1,3 +1,4 @@
+import { SettingsService } from './../services/settings.service';
 import { NgModule } from '@angular/core';
 import { PagesComponent } from './pages.component';
 
@@ -38,7 +39,8 @@ import { DonutGraphComponent } from '../components/donut-graph/donut-graph.compo
     PAGES_ROUTES,
     FormsModule,
     ChartsModule
-  ]
+  ],
+  providers: [ SettingsService ]
 })
 
 export class PagesModule{}
