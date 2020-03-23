@@ -1,4 +1,4 @@
-import { NgModule } from "@angular/core";
+import { NgModule } from '@angular/core';
 import { PagesComponent } from './pages.component';
 
 import { SharedModule } from '../shared/shared.module';
@@ -10,10 +10,12 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProgressComponent } from './progress/progress.component';
 import { Graph1Component } from './graph1/graph1.component';
 import { IncrementorComponent } from '../components/incrementor/incrementor.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
-// ng 2charts 
+// ng 2charts
 import { ChartsModule } from 'ng2-charts';
 import { DonutGraphComponent } from '../components/donut-graph/donut-graph.component';
+
 
 
 @NgModule({
@@ -23,7 +25,8 @@ import { DonutGraphComponent } from '../components/donut-graph/donut-graph.compo
     ProgressComponent,
     Graph1Component,
     IncrementorComponent,
-    DonutGraphComponent
+    DonutGraphComponent,
+    AccountSettingsComponent
   ],
   exports: [
     DashboardComponent,

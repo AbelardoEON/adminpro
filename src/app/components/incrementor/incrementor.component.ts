@@ -7,8 +7,8 @@ import { Component, OnInit, Input, Output, EventEmitter, ViewChild, ElementRef }
 })
 export class IncrementorComponent implements OnInit {
   @ViewChild('txtProgress', {static: false}) txtProgres: ElementRef;
-  @Input() progress: number = 50;
-  @Input() titleCounter: string = 'leyenda';
+  @Input() progress = 50;
+  @Input() titleCounter = 'leyenda';
   @Output() changeValue: EventEmitter<number>;
 
   constructor() {
@@ -23,10 +23,10 @@ export class IncrementorComponent implements OnInit {
     if ( newValue <= 0 ) {
       this.progress = 0;
     } else if ( newValue >= 100 ) {
-      this.progress = 100
+      this.progress = 100;
     } else {
-      this.progress = newValue
-    } 
+      this.progress = newValue;
+    }
     this.txtProgres.nativeElement.value = Number( this.progress );
     this.changeValue.emit( this.progress );
   }
