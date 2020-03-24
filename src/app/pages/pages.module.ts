@@ -1,12 +1,11 @@
-import { SettingsService } from './../services/settings.service';
+
 import { NgModule } from '@angular/core';
-import { PagesComponent } from './pages.component';
 
 import { SharedModule } from '../shared/shared.module';
 import { PAGES_ROUTES } from './pages.routes';
 import { FormsModule } from '@angular/forms';
 
-
+import { PagesComponent } from './pages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProgressComponent } from './progress/progress.component';
 import { Graph1Component } from './graph1/graph1.component';
@@ -17,6 +16,8 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
 import { ChartsModule } from 'ng2-charts';
 import { DonutGraphComponent } from '../components/donut-graph/donut-graph.component';
 
+// Services
+import { ServiceModule } from './../services/service.module';
 
 
 @NgModule({
@@ -38,9 +39,10 @@ import { DonutGraphComponent } from '../components/donut-graph/donut-graph.compo
     SharedModule,
     PAGES_ROUTES,
     FormsModule,
-    ChartsModule
+    ChartsModule,
+    ServiceModule
   ],
-  providers: [ SettingsService ]
+  providers: [  ]
 })
 
 export class PagesModule { }

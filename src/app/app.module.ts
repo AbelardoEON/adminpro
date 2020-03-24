@@ -1,4 +1,3 @@
-import { SettingsService } from './services/settings.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -27,7 +26,7 @@ import { FormsModule } from '@angular/forms';
     PagesModule,
     FormsModule
   ],
-  providers: [ SettingsService ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

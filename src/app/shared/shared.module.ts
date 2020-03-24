@@ -1,4 +1,5 @@
-import { NgModule } from "@angular/core";
+import { RouterModule } from '@angular/router';
+import { NgModule } from '@angular/core';
 
 import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
@@ -18,7 +19,10 @@ import { NopagefoundComponent } from './nopagefound/nopagefound.component';
     SidebarComponent,
     BreadcrumbsComponent,
     NopagefoundComponent
+  ],
+  imports: [
+    RouterModule
   ]
 })
 
-export class SharedModule{}
+export class SharedModule { }
