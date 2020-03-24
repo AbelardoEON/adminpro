@@ -7,12 +7,12 @@ export class SidebarService {
 
   menu: any = [
     {
-      title: 'Prinipal',
+      title: 'Principal',
       icon: 'mdi mdi-gauge',
       submenu: [
         {
           title: 'Dashboard',
-          url: '/dasboard'
+          url: '/dashboard'
         },
         {
           title: 'Progress',
@@ -20,7 +20,7 @@ export class SidebarService {
         },
         {
           title: 'Gráficas',
-          url: '/graph1'
+          url: '/graficas1'
         }
       ]
     }
