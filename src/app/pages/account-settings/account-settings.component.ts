@@ -15,6 +15,7 @@ export class AccountSettingsComponent implements OnInit {
     ) { }
 
   ngOnInit() {
+    this.setCheck();
   }
 
   changetheme( color: string, link: any ) {
@@ -33,6 +34,17 @@ export class AccountSettingsComponent implements OnInit {
     }
 
     link.classList.add('working');
+  }
+
+  setCheck() {
+    const selectors: any = document.getElementsByClassName('selector');
+    const theme = this.settingService.settings.theme;
+    for ( let ref of selectors ) {
+      if ( ref.getAttribute('data-theme') === theme ) {
+        ref.classList.add('working');
+        break;
+      }
+    }
   }
 
 }

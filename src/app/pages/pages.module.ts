@@ -43,4 +43,4 @@ import { DonutGraphComponent } from '../components/donut-graph/donut-graph.compo
   providers: [ SettingsService ]
 })
 
-export class PagesModule{}
+export class PagesModule { }
