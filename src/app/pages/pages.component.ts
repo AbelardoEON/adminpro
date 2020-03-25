@@ -1,5 +1,7 @@
 import { SettingsService } from './../services/settings/settings.service';
 import { Component, OnInit } from '@angular/core';
+// calling function of a external file of javascript
+declare function init_plugins();
 
 @Component({
   selector: 'app-pages',
@@ -15,6 +17,7 @@ export class PagesComponent implements OnInit {
   }
 
   ngOnInit() {
+    init_plugins();
   }
 
 }
