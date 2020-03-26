@@ -3,7 +3,8 @@ import { CommonModule } from '@angular/common';
 import {
   SettingsService,
   SidebarService,
-  SharedService
+  SharedService,
+  WaitService
 } from './service.index';
 
 
@@ -15,7 +16,8 @@ import {
   providers: [
     SettingsService,
     SidebarService,
-    SharedService
+    SharedService,
+    WaitService
   ]
 })
 export class ServiceModule { }

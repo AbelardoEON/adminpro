@@ -11,6 +11,9 @@ import { ProgressComponent } from './progress/progress.component';
 import { Graph1Component } from './graph1/graph1.component';
 import { IncrementorComponent } from '../components/incrementor/incrementor.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
+// for toast
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
 // ng 2charts
 import { ChartsModule } from 'ng2-charts';
@@ -18,6 +21,8 @@ import { DonutGraphComponent } from '../components/donut-graph/donut-graph.compo
 
 // Services
 import { ServiceModule } from './../services/service.module';
+import { PromisesComponent } from './promises/promises.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 
 @NgModule({
@@ -28,7 +33,9 @@ import { ServiceModule } from './../services/service.module';
     Graph1Component,
     IncrementorComponent,
     DonutGraphComponent,
-    AccountSettingsComponent
+    AccountSettingsComponent,
+    PromisesComponent,
+    RxjsComponent
   ],
   exports: [
     DashboardComponent,
@@ -40,7 +47,9 @@ import { ServiceModule } from './../services/service.module';
     PAGES_ROUTES,
     FormsModule,
     ChartsModule,
-    ServiceModule
+    ServiceModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot()
   ],
   providers: [  ]
 })
